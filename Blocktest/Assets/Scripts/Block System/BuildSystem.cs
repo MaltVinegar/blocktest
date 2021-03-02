@@ -25,7 +25,7 @@ public class BuildSystem : MonoBehaviour
     /// The method called whenever an object is removed.
     /// </summmary>
     /// <param name="foreground"> Whether or not the block to be destroyed is in the foreground. </param>
-    /// <param name="position"> The position of the block to destroy (grid coords) </param>
+    /// <param name="tilePosition"> The position of the block to destroy (grid coords) </param>
     public void BreakBlockCell(bool foreground, Vector3Int tilePosition)
     {
         if(foreground && foregroundTilemap.HasTile(tilePosition)) {

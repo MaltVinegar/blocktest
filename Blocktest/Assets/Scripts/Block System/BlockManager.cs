@@ -30,6 +30,7 @@ public class BlockManager : MonoBehaviour {
             // Instead of referencing multiple arrays, we just create a new BlockType object and get values from that.
             BlockType newBlockType = allBlockTypes[i];
             allBlocks[i] = new Block(i, newBlockType.blockName, newBlockType.blockSprite, newBlockType.placeSound, newBlockType.blockSmoothing);
+            blockNames.Add(newBlockType.blockName);
         }
         selectionDropdown.AddOptions(blockNames);
     }
